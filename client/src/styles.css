@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-synthesis: none; }
+html { scroll-behavior: smooth; }
+body { margin: 0; }
+button, input { font: inherit; }
+@layer components {
+  .field { @apply block w-full rounded-xl border border-white/10 bg-[#151e2c] py-3.5 pl-11 pr-4 text-sm text-white outline-none transition placeholder:text-slate-600 focus:border-accent/60 focus:ring-2 focus:ring-accent/10; }
+  .light-field { @apply block w-full rounded-xl border border-[#dce6d9] bg-white px-4 py-3 text-sm text-[#223126] outline-none transition placeholder:text-[#a6b1a5] focus:border-[#7fb273] focus:ring-2 focus:ring-[#a7d49b]/20; }
+}
